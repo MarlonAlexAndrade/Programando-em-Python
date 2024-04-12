@@ -1,0 +1,30 @@
+Nova York                  8398748
+Los Angeles                3990456
+Chicago                    2705994
+Houston                    2320268
+Phoenix                    1680992
+Filadélfia                 1584064
+San Antonio                1547253
+San Diego                  1423851
+Dallas                     1343573
+San Jose                   1035317
+Austin                     1033677
+Jacksonville               929647
+Fort Worth                 909585
+Columbus                   898553
+Charlotte                  885708
+Indianápolis               877584
+São Francisco              877557
+Seattle                    744955
+Denver                     716492
+Washington                 702455
+Boston                     694583
+El Paso                    682669
+Detroit                    673104
+Nashville                  670820
+Memphis                    651073
+Portland                   647805
+Oklahoma City              649021
+Las Vegas                  644644
+Louisville                 617638
+Baltimore                  609032

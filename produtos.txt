@@ -1,0 +1,5 @@
+Maçã, 2.50
+Banana, 1.50
+Laranja, 3.00
+Pêra, 2.00
+Morango, 4.50
