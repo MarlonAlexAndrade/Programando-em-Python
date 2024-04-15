@@ -1,10 +1,2 @@
-Joao, 8.5
-Maria, 7.9
-Pedro, 6.2
-Ana, 9.0
-Lucas, 5.5
-Julia, 8.7
-Carlos, 7.0
-Mariana, 6.8
-Paulo, 9.5
-Luana, 8.0
+1, Andrade, 1997
+2, Matematico, 1999
