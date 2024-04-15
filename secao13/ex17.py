@@ -1,7 +1,7 @@
 def ler_arquivo_matriz(nome_arquivo):
     with open(nome_arquivo, 'r') as arquivo:
         dimensoes = tuple(map(int, arquivo.readline().split()))
-        qtd_anuladas = int(arquivo.readline())
+        qtd_anuladas = arquivo.readline()
         posicoes_anuladas = [tuple(map(int, linha.split())) for linha in arquivo.readlines()]
     return dimensoes, posicoes_anuladas
 
@@ -16,7 +16,7 @@ def gerar_matriz(dimensoes, posicoes_anuladas):
 def escrever_matriz(nome_arquivo, matriz):
     with open(nome_arquivo, 'w') as arquivo:
         for linha in matriz:
-            arquivo.write(''.join(map(str, linha)) + '\n')
+            arquivo.write(' '.join(map(str, linha)) + '\n')
 
 nome_arquivo = "matriz.txt"
 dimensoes, posicoes_anuladas = ler_arquivo_matriz(nome_arquivo)
