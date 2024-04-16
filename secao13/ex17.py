@@ -5,8 +5,6 @@ def ler_arquivo_matriz(nome_arquivo):
         posicoes_anuladas = [tuple(map(int, linha.split())) for linha in arquivo.readlines()]
     return dimensoes, posicoes_anuladas
 
-
-
 def gerar_matriz(dimensoes, posicoes_anuladas):
     matriz = [[1] * dimensoes[1] for _ in range(dimensoes[0])]
     for linha, coluna in posicoes_anuladas:
