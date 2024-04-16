@@ -1,4 +1,5 @@
 class Elevador:
+    
     def __init__(self, capacidade, total_andares):
         self.__andar_atual = 0
         self.__total_andares = total_andares
@@ -10,7 +11,7 @@ class Elevador:
             self.__pessoas_presentes += 1
         else:
             print("O elevador está cheio.")
-
+            
     def sai(self):
         if self.__pessoas_presentes > 0:
             self.__pessoas_presentes -= 1

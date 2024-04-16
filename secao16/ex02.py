@@ -4,35 +4,44 @@ class Pessoa:
         self.__idade = idade
         self.__altura = altura
 
+    def get_nome(self):
+        return self.__nome
+
+    def get_idade(self):
+        return self.__idade
+
+    def get_altura(self):
+        return self.__altura
+
+
 class Agenda:
     def __init__(self):
         self.__pessoas = []
 
-    def armazena_pessoa(self, nome, idade, altura):
-        pessoa = Pessoa(nome, idade, altura)
+    def armazena_pessoa(self, pessoa):
         self.__pessoas.append(pessoa)
 
     def remove_pessoa(self, nome):
         for pessoa in self.__pessoas:
-            if pessoa._Pessoa__nome == nome:  
+            if pessoa.get_nome() == nome:
                 self.__pessoas.remove(pessoa)
                 return f"{nome} removido(a) da agenda."
         return f"{nome} não encontrado(a) na agenda."
 
     def busca_pessoa(self, nome):
         for pessoa in self.__pessoas:
-            if pessoa._Pessoa__nome == nome:  
+            if pessoa.get_nome() == nome:
                 return pessoa
         return None
 
     def imprime_agenda(self):
         for pessoa in self.__pessoas:
-            print(f"Nome: {pessoa._Pessoa__nome}, Idade: {pessoa._Pessoa__idade}, Altura: {pessoa._Pessoa__altura}")
+            print(f"Nome: {pessoa.get_nome()}, Idade: {pessoa.get_idade()}, Altura: {pessoa.get_altura()}")
 
     def imprime_pessoa(self, index):
         if 0 <= index < len(self.__pessoas):
             pessoa = self.__pessoas[index]
-            print(f"Nome: {pessoa._Pessoa__nome}, Idade: {pessoa._Pessoa__idade}, Altura: {pessoa._Pessoa__altura}")
+            print(f"Nome: {pessoa.get_nome()}, Idade: {pessoa.get_idade()}, Altura: {pessoa.get_altura()}")
         else:
             print("Index out of range.")
 
@@ -42,9 +51,9 @@ pessoa2 = Pessoa("Maria", 25, 160)
 pessoa3 = Pessoa("Pedro", 40, 180)
 
 agenda = Agenda()
-agenda.armazena_pessoa(pessoa1._Pessoa__nome, pessoa1._Pessoa__idade, pessoa1._Pessoa__altura)
-agenda.armazena_pessoa(pessoa2._Pessoa__nome, pessoa2._Pessoa__idade, pessoa2._Pessoa__altura)
-agenda.armazena_pessoa(pessoa3._Pessoa__nome, pessoa3._Pessoa__idade, pessoa3._Pessoa__altura)
+agenda.armazena_pessoa(pessoa1)
+agenda.armazena_pessoa(pessoa2)
+agenda.armazena_pessoa(pessoa3)
 
 print("Agenda completa:")
 agenda.imprime_agenda()
@@ -62,6 +71,6 @@ pessoa_encontrada = agenda.busca_pessoa(nome)
 if pessoa_encontrada:
     print(f"{nome} encontrado na agenda.")
     print(f"Detalhes de {nome}:")
-    print(f"Nome: {pessoa_encontrada._Pessoa__nome}, Idade: {pessoa_encontrada._Pessoa__idade}, Altura: {pessoa_encontrada._Pessoa__altura}")
+    print(f"Nome: {pessoa_encontrada.get_nome()}, Idade: {pessoa_encontrada.get_idade()}, Altura: {pessoa_encontrada.get_altura()}")
 else:
     print(f"{nome} não encontrado na agenda.")

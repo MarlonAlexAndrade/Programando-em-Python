@@ -62,17 +62,17 @@ controle = ControleRemoto(tv)
 
 controle.aumentar_volume()
 controle.aumentar_volume()
-print("Volume atual:", controle.consultar_volume())  
+print(f'Volume atual: {controle.consultar_volume()}')  
 
 controle.diminuir_volume()
-print("Volume atual:", controle.consultar_volume())  
+print(f'Volume atual: {controle.consultar_volume()}')  
 
 controle.aumentar_canal()
 controle.aumentar_canal()
-print("Canal atual:", controle.consultar_canal())  
+print(f'Canal atual: {controle.consultar_canal()}')  
 
 controle.diminuir_canal()
-print("Canal atual:", controle.consultar_canal())  
+print(f'Canal atual: {controle.consultar_canal()}')  
 
 controle.trocar_canal(7)
-print("Canal atual:", controle.consultar_canal()) 
+print(f'Canal atual: {controle.consultar_canal()}') 
